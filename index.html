@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bicitienda</title>
+</head>
+<body id="body">
+    <header class="header">
+        <div class="header--contenedor">
+            <div class="barras" id="btn--menu--barras"><span></span><span></span><span></span></div>
+            <img src="assets/img/LOGO.svg" alt="Logo Bicitienda">
+            <nav class="nav">
+                <div class="overlay" id="overlay"></div>
+                <div class="nav--bars" id="nav--menu">
+                    <img src="./assets/img/cerrar.svg" alt="" class="btn--cerrar--menu" id="btn--cerrar--menu"> 
+                <a href="./pages/sesion.html"class="micuenta--barmenu"><i class="fa-regular fa-user-circle" aria-hidden="true"></i><span>Mi cuenta</span></a>
+                <ul>
+                    <li><a href="#body" class="botones--menu">INICIO</a></li>
+                    <li><a href="#main--about" class="botones--menu">NOSOTROS</a></li>
+                    <li><a href="#main--productos" class="botones--menu">PRODUCTOS</a></li>
+                    <li><a href="#main__contacto" class="botones--menu">CONTACTO</a></li>
+                </ul>
+                </div>
+                
+                <a href="./pages/sesion.html" class="micuenta--logo"><i class="fa-regular fa-user-circle" aria-hidden="true"></i></a>        
+               
+                <a href="" class="carrito carrito--vacio" id="btn--menu--carrito"><i class="fa-solid fa-cart-shopping"></i><div class="burbuja" id="burbuja">0</div></a>
+                
+    
+                <div class="carrito--compras" id="carrito--compras">
+                    <img src="./assets/img/cerrar.svg" alt="" class="btn--cerrar--carrito" id="btn--cerrar--carrito"> 
+                    <h2>CARRITO DE COMPRAS</h2>
+                    <div class="carrito--contenedor" id="carrito--contenedor">
+
+                    </div>
+                             <div class="carrito--abajo">
+                                     <span class="linea"></span>
+                                     <div class="subtotal">
+                                     <h4>Subtotal</h4>
+                                    <span></span>
+        
+                                     </div>
+                                    <div class="total">
+                                        <h3>Total</h3>
+                                        <span></span>
+        
+                                     </div>
+                                <div class="botones--carrito">
+                                     <button class="form__submit btn--comprar">Comprar</button>
+                                     <button class="form__submit btn--vaciar--carrito">Vaciar Carrito</button>
+                                </div>
+                             </div>
+                   
+        
+        
+                </div>          
+            </nav> 
+        </div>
+        <div class="msj--agregar--item" id="msj--agregar--item-carrito"><p></p></div> 
+    </header>
+    
+    
+   
+    
+    <main class="main">
+        <div class="aviso" id="aviso">  
+        </div>
+        <section class="main--hero">
+            <div class="hero--contenedor">
+                <div class="hero--info">
+                <h1>En nuestra tienda encontrás la bici que buscás</h1>
+                <p>Bienvenido a nuestra tienda, nos especializamos en la venta de bicicletas y accesorios para las mismas. En <span>Bicitienda</span> nos esmeramos para dar el mejor servicio posible. Inicia sesión para obtener mejores precios y otros beneficios.</p>
+                 <a href="#main--productos">Productos</a>
+                    
+                </div>
+                <img src="assets/img/bici_portada.png" alt="">
+            </div>
+                
+
+        </section>
+
+
+       
+
+
+        <section class="main--about" id="main--about">
+             <div class="about--items">
+                <div class="items--item">
+                    <img src="assets/img/tarj.svg" alt="">
+                    <h3>Medios de Pago </h3>
+                    <p>Aceptamos todos los medios de pago. Efectivo, transferencia y todas las tarjetas de débito y crédito con cuotas sin interés.</p>
+    
+                    
+                </div>
+                <div class="items--item">
+                    <img src="assets/img/camion.svg" alt="">
+                    <h3>Envios a todo el pais</h3>
+                    <p>Enviamos a todo el país a través de Correo Argentino, OCA y Envío Cargo. Para  CABA y GBA, contamos con mensajería propia.</p>
+                    
+                </div>
+                <div class="items--item">
+                    <img src="assets/img/escudo.svg" alt="">
+                    <h3>Compra protegida</h3>
+                    <p>Queremos que estés completamente satisfecho con cada compra que realices en nuestra tienda. Si no es así, te devolvemos el dinero.</p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="main--productos" id="main--productos">
+            <aside class="productos--categorias">
+                <h3>CATEGORIAS</h3>
+                <ul id="lista--categorias"></ul>                
+            </aside>
+            <div class="products--container">
+                  <div class="cards--container" id="cards--container">
+                                                                  
+                   </div>
+                                       
+                    
+            <div class="paginas" id="paginas"></div>
+                    
+            </div>
+
+        </section>
+
+
+        <section class="main__contacto" id="main__contacto" >
+
+            <div class="contacto__datosymapa">
+        
+                <div class="contacto__datos">
+                    <h2 class="main__h2">Contactenos</h2>
+                    
+                    <div class="datos__sucursal">
+                            <h3>Buenos Aires</h3>
+                            <div class="sucursal__item"><img src="assets/img/ubi.png" alt=""><span>Direccion 1234 - Argentina</span></div>
+                            <div class="sucursal__item"> <img src="assets/img/mail.png" alt=""><span>mail@mail.com.ar</span></div>
+                            <div class="sucursal__item"> <img src="assets/img/tel.png" alt=""><span>11 1111-1111</span></div>                   
+                                                                                       
+                            
+                    </div>   
+        
+                    <ul class="datos__redsocial">
+                            <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li><a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+
+                          
+                    
+           </div>
+
+           <form id="form--container" novalidate>
+            <input type="text" placeholder="Nombre" class="form__input" id="input--nombre" maxlength="50">
+            <small class="small--fuente" id="small--nombre"></small>
+            <input type="email" name="" id="input--mail" placeholder="Email" class="form__input" maxlength="50">
+            <small class="small--fuente" id="small--mail"></small>
+            <textarea name="" id="input--mensaje" cols="20" rows="8" placeholder="Mensaje (150 caracteres max.)" class="form__input" maxlength="150"></textarea>
+            <small class="small--fuente" id="small--mensaje"></small>
+            <input type="submit" value="Enviar" class="form__submit" id="form--submit"  >          
+
+             </form>
+           
+
+                  <div class="contact__mapa" id="mapa--container">
+                 
+                   </div>
+        </div>
+        
+             </section>  
+
+
+
+
+
+
+    </main>
+    
+    
+    
+    <footer class="footer">
+<ul>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+            <li><a href="#">Politicas de Privacidad</a></li>
+
+    </ul>
+    <div class="footer__copy">
+        <span>Copyright © 2023</span>
+        <img src="assets/img/LOGO_C.svg" alt="">
+    </div>
+    
+
+    </footer>
+    <script src="./assets/datos.js"></script>
+   <script src="./assets/index.js"></script>
+   
+</body>
+</html>
